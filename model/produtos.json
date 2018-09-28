@@ -1,0 +1,39 @@
+[
+     {
+    
+    "id": 12345,
+    "nome":"coca-cola lata",
+    "preco":3,
+    "quantidade":20
+   },
+    {  
+    "id": 12345,
+    "nome":"coca-cola lata",
+    "preco":3.5,
+    "quantidade":20
+   },
+    {
+    "id": 5454,
+    "nome":"coca-cola 3l",
+    "preco":8.5,
+    "quantidade":15
+   },
+    {
+    "id": 1564,
+    "nome":"Feijão",
+    "preco":5.5,
+    "quantidade":50
+   },
+    {
+    "id": 1453,
+    "nome":"Arroz ",
+    "preco":6.5,
+    "quantidade":40
+   },
+    {
+    "id": 4545,
+    "nome":"coca-cola 2l",
+    "preco":5.5,
+    "quantidade":10
+   }
+]   
