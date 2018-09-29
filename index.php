@@ -3,7 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <title>Index</title>
+  
         <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/typeaheadjs.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" >
         
         <script src="js/jquery-3.3.1.js" type="text/javascript"> </script>
@@ -45,7 +47,7 @@
                         </div>
                         <div class="card-body">
                             <ol>
-                                <li>1 -sanduiche  de presunto ........$2,50</li>
+                                
                             </ol>
                         </div>
                      </div>
@@ -70,12 +72,9 @@
                  </div>
                   <div class="input-group mb-3" >
                     <input type="text" class="form-control" placeholder="Nome Produto" id="input-produto"  >
-                    <div class="input-group-append">
-                      <button class="btn btn-outline-secondary" type="button" id="btn-produto"><i class="fa fa-search-plus" aria-hidden="true"></i></button>
-                    </div>
                  </div>
                  <button type="button" class="btn btn-info">Estorno</button>
-                 <button type="button" class="btn btn-success">Pagar</button>
+                 <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal-pagar">Pagar</button>
                  <button type="button" class="btn btn-danger" id="btn-danger" data-toggle="modal" data-target="#modal-cancelar">Cencelar</button>
                 </div>
                 <!--fimcol-2 -->
@@ -103,9 +102,9 @@
                   </div>
                 </div>
               </div>
-             
-             <!-- Modal -->
-            <div class="modal fade alert" id="modal-cancelar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            </div>
+            <!--Modal 2 -->
+              <div class="modal fade alert" id="modal-cancelar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
               <div class="modal-dialog" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
@@ -115,15 +114,39 @@
                     </button>
                   </div>
                   <div class="modal-body">
-                      <i class="fa fa-exclamation-triangle text-warning"  aria-hidden="true" style="font-size:26pt;"></i>  
+                      <i class="fa fa-exclamation-triangle text-info"  aria-hidden="true" style="font-size:35pt;"></i>  
                    Deseja cancelar a venda?
                   </div>
-                  <div class="modal-footer" id="modal-cancelar">
-                    <button type="button" class="btn btn-info" data-dismiss="modal">Sim</button>
-                    <button type="button" class="btn btn-info" data-dismiss="modal">Não</button>
-                   
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" id="bnt-cancelar-sim">Sim</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Não</button>           
+                    </div>
                   </div>
                 </div>
-              </div>   
+              </div>
+            </div>  
+           <!--Modal 3 -->
+              <div class="modal fade alert" id="modal-pagar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Atenção</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                      <i class="fa fa-exclamation-triangle text-info"  aria-hidden="true" style="font-size:35pt;"></i>  
+                   Deseja realmente concluir a venda?
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" id="bnt-cancelar-sim">Sim</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Não</button>           
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>    
+            
     </body>
 </html>
