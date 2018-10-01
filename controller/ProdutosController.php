@@ -4,8 +4,13 @@
 function ListaProdutos()
 {
    $con =  conect_db();
+   $query= 'SELECT * FROM produtos';
    
-  return $con;   
+   $res = mysqli_query($con, $query);
+   
+   $produtos = mysqli_fetch_all($res, MYSQLI_ASSOC);
+   
+  echo json_encode($produtos);   
 }
 
 function AtualizarProdutos($produto)

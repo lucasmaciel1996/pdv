@@ -4,4 +4,4 @@
  // echo __DIR__;
   
   $res = ListaProdutos();
-  var_dump($res);
+ //var_dump($res);

@@ -140,7 +140,7 @@
                    Deseja realmente concluir a venda?
                   </div>
                   <div class="modal-footer">
-                      <button type="button" class="btn btn-danger" id="bnt-cancelar-sim">Sim</button>
+                      <button type="button" class="btn btn-danger" id="btn-pagar-sim">Sim</button>
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Não</button>           
                     </div>
                   </div>
